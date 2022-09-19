@@ -1,6 +1,7 @@
 import 'package:complete_advanced_flutter/presentation/forgot_password/forgot_password.dart';
 import 'package:complete_advanced_flutter/presentation/login/login.dart';
 import 'package:complete_advanced_flutter/presentation/main/main.dart';
+import 'package:complete_advanced_flutter/presentation/managers/strings_manager.dart';
 import 'package:complete_advanced_flutter/presentation/onboarding/onboarding.dart';
 import 'package:complete_advanced_flutter/presentation/register/register.dart';
 import 'package:complete_advanced_flutter/presentation/splash/splash.dart';
@@ -44,11 +45,13 @@ class RouteGenerator {
       builder: (_) => Scaffold(
         appBar: AppBar(
           title: const Text(
-            'No Route Found',
+            AppStrings.noRouteFound,
           ),
         ),
         body: const Center(
-          child: Text('No Route Found'),
+          child: Text(
+            AppStrings.noRouteFound,
+          ),
         ),
       ),
     );
